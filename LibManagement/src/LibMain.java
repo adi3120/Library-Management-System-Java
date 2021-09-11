@@ -10,7 +10,7 @@ public class LibMain {
 	}
 
 	public static void mainMenu() {
-		String[] options = { "Login", "Add new user" };
+		String[] options = { "Login", "Add new user","Exit" };
 		frame = new JFrame("Library Management System");
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -30,6 +30,9 @@ public class LibMain {
 			LogAdd.login();
 		} else if (selection == 1) {
 			LogAdd.addUser();
+		}else if(selection==2)
+		{
+			frame.dispose();
 		}
 
 	}

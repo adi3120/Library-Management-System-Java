@@ -55,7 +55,7 @@ public class Admin {
 				public void actionPerformed(ActionEvent e) {
 					// TODO Auto-generated method stub
 					if (j == 0) {
-						AdminFunctions.viewBooks();
+						AdminFunctions.showBooks();
 					}
 					else if(j==5) 
 					{

@@ -117,7 +117,6 @@ public class LogAdd {
 				} else {
 					Connection connection = SQLUtils.connect("root", "");
 					String query = "insert into users(username,password) values('" + uname + "' , '" + upass + "')";
-					System.out.println(query);
 					SQLUtils.insertToTable(connection, query);
 					try {
 						connection.close();
