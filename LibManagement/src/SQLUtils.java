@@ -78,6 +78,18 @@ public class SQLUtils {
 		
 
 	}
+	public static void DMLQuery(Connection connection, String query) {
+		try {
+			Statement statement = connection.createStatement();
+			statement.executeUpdate(query);
+			statement.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+	}
 }
 
 
