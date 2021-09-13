@@ -402,10 +402,6 @@ public class AdminFunctions {
 	}
 
 	public static void refresh() {
-		String t1 = "bookdata";
-		String t2 = "issuedbookdata";
-		String t3 = "returnedbookdata";
-		String[] ts = { t1, t2, t3 };
 		Connection connection = SQLUtils.connect("root", "");
 		try {
 			CallableStatement statement=connection.prepareCall("{call refreshBookData()}");

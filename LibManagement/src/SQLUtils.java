@@ -91,9 +91,3 @@ public class SQLUtils {
 
 	}
 }
-
-
-//SQLUtils.DeleteTable(connection, "delete from users");
-//SQLUtils.displayTable(connection, "select * from users");
-//SQLUtils.DDLQuery(connection, "alter table users auto_increment=0");
-//SQLUtils.resetAutoIncrement(connection, "Select max(id) from users");

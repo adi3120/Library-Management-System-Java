@@ -9,7 +9,6 @@ public class LibMain {
 	public static void main(String[] args) {
 		AdminFunctions.refresh();
 		mainMenu();
-		Admin.ShowAdminMenu("", 0);
 	}
 
 	public static void mainMenu() {
@@ -34,25 +33,24 @@ public class LibMain {
 		made.setBounds(500, 600, 450, 40);
 
 		frame.add(made);
-
 		background.setBounds(0, 0, 800, 700);
 		frame.add(background);
 		frame.setSize(799, 699);
 		frame.setSize(800, 700);
 
-//		int selection = JOptionPane.showOptionDialog(frame, "Welcome to Library Management System", "Select an option",
-//				JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
-//
-//		if (selection == 0) {
-//			LogAdd.login();
-//		} else if (selection == 1) {
-//			LogAdd.addUser();
-//		} else if (selection == 2) {
-//			frame.setVisible(false);
-//			frame.dispose();
-//			System.exit(0);
-//
-//		}
+		int selection = JOptionPane.showOptionDialog(frame, "Welcome to Library Management System", "Select an option",
+				JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+
+		if (selection == 0) {
+			LogAdd.login();
+		} else if (selection == 1) {
+			LogAdd.addUser();
+		} else if (selection == 2) {
+			frame.setVisible(false);
+			frame.dispose();
+			System.exit(0);
+
+		}
 
 	}
 

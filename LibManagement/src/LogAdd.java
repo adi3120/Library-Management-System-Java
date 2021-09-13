@@ -1,4 +1,6 @@
 import javax.swing.*;
+
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.*;
@@ -81,15 +83,18 @@ public class LogAdd {
 		JPasswordField userInP = new JPasswordField();
 		JButton addUser = new JButton("Add user");
 
-		AddUserFrame = LibMain.newJframeWindow("Add a new user", 400, 210, JFrame.DISPOSE_ON_CLOSE);
+		AddUserFrame = LibMain.newJframeWindow("Add a new user", 600, 310, JFrame.DISPOSE_ON_CLOSE);
 
 		userN.setBounds(30, 15, 100, 30);
-		userP.setBounds(30, 50, 100, 30);
-		userConfP.setBounds(30, 85, 150, 30);
-		userInN.setBounds(150, 15, 100, 30);
-		userInP.setBounds(150, 50, 100, 30);
-		userConfInP.setBounds(150, 85, 100, 30);
-		addUser.setBounds(130, 120, 120, 25);
+		userP.setBounds(30, 60, 100, 30);
+		userConfP.setBounds(30, 105, 150, 30);
+		userInN.setBounds(150, 15, 320, 40);
+		userInN.setFont(new Font("Arial",Font.PLAIN,20));
+		userInP.setBounds(150, 60, 320, 40);
+		userInP.setFont(new Font("Arial",Font.PLAIN,20));
+		userConfInP.setBounds(150, 105, 320, 40);
+		userConfInP.setFont(new Font("Arial",Font.PLAIN,20));
+		addUser.setBounds(130, 170, 120, 25);
 
 		AddUserFrame.add(userN);
 		AddUserFrame.add(userP);
