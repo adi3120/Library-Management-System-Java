@@ -4,7 +4,7 @@ How To use it
 
 1) You should have xampp installed in your system to use it.
 
-2) Add the database aka the library folder ive provided in your mysql server.
+2) Add the database aka the library folder ive provided, to your mysql server.
 
 3) Start your mysql server from xampp.
 
