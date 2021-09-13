@@ -22,7 +22,7 @@ public class AdminFunctions {
 	public static void addBook() {
 
 		JFrame addFrame;
-		addFrame = LibMain.newJframeWindow("Add Book", 400, 400, JFrame.DISPOSE_ON_CLOSE);
+		addFrame = LibMain.newJframeWindow("Add Book", 600, 400, JFrame.DISPOSE_ON_CLOSE);
 		JLabel name, auth, gen, price;
 		JTextField nameIN = null, authIN = null, genIN = null, priceIN = null;
 		JButton addBOOK = new JButton("Add Book");
@@ -49,7 +49,8 @@ public class AdminFunctions {
 
 			lables[i].setBounds(20, 40 + yoff, 120, 20);
 			addFrame.add(lables[i]);
-			inputs[i].setBounds(150, 40 + yoff, 120, 20);
+			inputs[i].setBounds(150, 40 + yoff, 400, 40);
+			inputs[i].setFont(new Font("Arial",Font.PLAIN,20));
 			yoff += 60;
 		}
 
@@ -217,7 +218,7 @@ public class AdminFunctions {
 
 	public static void issueBook() {
 		JFrame issueFrame;
-		issueFrame = LibMain.newJframeWindow("Issue Book", 400, 400, JFrame.DISPOSE_ON_CLOSE);
+		issueFrame = LibMain.newJframeWindow("Issue Book", 600, 400, JFrame.DISPOSE_ON_CLOSE);
 		JLabel id, Uroll, Uname, iDate;
 		JTextField idIN = null, UrollIN = null, UnameIN = null, idateIN = null;
 		JButton issue = new JButton("Issue Book");
@@ -244,7 +245,8 @@ public class AdminFunctions {
 
 			lables[i].setBounds(20, 40 + yoff, 120, 20);
 			issueFrame.add(lables[i]);
-			inputs[i].setBounds(150, 40 + yoff, 120, 20);
+			inputs[i].setBounds(150, 40 + yoff, 320, 40);
+			inputs[i].setFont(new Font("Arial",Font.PLAIN,20));
 			yoff += 60;
 		}
 
@@ -291,7 +293,7 @@ public class AdminFunctions {
 
 	public static void returnBook() {
 		JFrame returnFrame;
-		returnFrame = LibMain.newJframeWindow("Return Book", 400, 400, JFrame.DISPOSE_ON_CLOSE);
+		returnFrame = LibMain.newJframeWindow("Return Book", 600, 400, JFrame.DISPOSE_ON_CLOSE);
 		JLabel id, Uroll, rDate;
 		JTextField idIN = null, rdateIN = null, UrollIN = null;
 		JButton returnBut = new JButton("Return Book");
@@ -317,7 +319,8 @@ public class AdminFunctions {
 
 			lables[i].setBounds(20, 40 + yoff, 120, 20);
 			returnFrame.add(lables[i]);
-			inputs[i].setBounds(150, 40 + yoff, 120, 20);
+			inputs[i].setBounds(150, 40 + yoff, 320, 40);
+			inputs[i].setFont(new Font("Arial",Font.PLAIN,20));
 			yoff += 60;
 		}
 
